@@ -42,12 +42,12 @@ namespace WinformHostingHelix
             };
             var ambientLight = new AmbientLight3D
             {
-                Color = new Color4( 0.1f, 0.1f, 0.1f, 1.0f )
+                Color = System.Windows.Media.Colors.DimGray
             };
             var directionalLight = new DirectionalLight3D
             {
-                Color = SharpDX.Color.White,
-                Direction = new Vector3(-2, -5, -2)
+                Color = System.Windows.Media.Colors.White,
+                Direction = new System.Windows.Media.Media3D.Vector3D(-2, -5, -2)
             };
             viewport3DX.Items.Add( ambientLight );
             viewport3DX.Items.Add( directionalLight );
